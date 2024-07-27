@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Navbar = ({ menuActive, setMenuActive }) => {
-  const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
-
+const Navbar = ({
+  menuActive,
+  setMenuActive,
+  activeLink,
+  setActiveLink,
+  location,
+}) => {
   const handleLinkClick = (path) => {
     setActiveLink(path);
   };
@@ -48,7 +51,7 @@ const Navbar = ({ menuActive, setMenuActive }) => {
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  }, [location]);
+  }, [location, setActiveLink]);
 
   return (
     <div>
@@ -105,6 +108,9 @@ const Navbar = ({ menuActive, setMenuActive }) => {
 Navbar.propTypes = {
   menuActive: PropTypes.bool.isRequired,
   setMenuActive: PropTypes.func.isRequired,
+  activeLink: PropTypes.string.isRequired,
+  setActiveLink: PropTypes.func.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export default Navbar;

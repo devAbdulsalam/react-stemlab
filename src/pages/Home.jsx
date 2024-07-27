@@ -36,7 +36,7 @@ function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div
-                id="hoverBlue"
+                id="hoverOrange"
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
@@ -77,7 +77,7 @@ function Home() {
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgOrange text-white flex-shrink-0">
+                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgBlue text-white flex-shrink-0">
                     <span className="webdev"></span>
                   </div>
                   <h2 className="text-gray-900 text-lg title-font font-medium">
@@ -109,7 +109,7 @@ function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div
-                id="hoverBlue"
+                id="hoverOrange"
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
@@ -149,7 +149,7 @@ function Home() {
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgOrange text-white flex-shrink-0">
+                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgBlue text-white flex-shrink-0">
                     <span className="training"></span>
                   </div>
                   <h2 className="text-gray-900 text-lg title-font font-medium">
@@ -182,7 +182,7 @@ function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div
-                id="hoverBlue"
+                id="hoverOrange"
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
@@ -223,7 +223,7 @@ function Home() {
                 className="flex rounded-lg h-full bg-gray-100 p-8 flex-col"
               >
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgOrange text-white flex-shrink-0">
+                  <div className="w-10 h-10 mr-3 flex-center rounded-full bgBlue text-white flex-shrink-0">
                     <span className="linkage"></span>
                   </div>
                   <h2 className="text-gray-900 text-lg title-font font-medium">
