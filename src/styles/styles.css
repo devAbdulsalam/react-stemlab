@@ -610,7 +610,7 @@
     left: 0;
     background-image: url("/internship.jpeg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
@@ -620,78 +620,63 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/kck.png");
+    background-image: url("/kidscamp.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
   }
-  .programs-container {
-    font-family: var(--font-2);
-    background-color: rgb(255, 255, 255, 0.1);
+  #programs h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
   }
-  .programs-section h2 {
-    font-size: larger;
-    font-weight: 600;
-  }
-}
-/* CARD */
-@media screen {
-  .link-card {
-    list-style: none;
-    display: flex;
-    padding: 1px;
-    background-color: #5d5d5d;
-    background-image: none;
-    background-size: 400%;
-    border-radius: 7px;
-    background-position: 100%;
-    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-  }
-  .link-card > a {
-    width: 100%;
-    text-decoration: none;
-    line-height: 1.4;
-    padding: calc(1.5rem - 1px);
-    border-radius: 8px;
-    color: white;
-    background-color: #23262d;
-    opacity: 0.8;
-  }
-  h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-  .link-card:is(:hover, :focus-within) {
-    background-position: 0;
-    background-image: var(--accent-gradient);
-  }
-  .link-card:is(:hover, :focus-within) h2 {
-    color: rgb(var(--accent-light));
+  #programs p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
   }
 }
 
+/* ANIMATION */
 @media screen {
   .animation-container {
+    width: 100%;
     font-family: "Montserrat", sans-serif;
-    background: var(--stemBlue);
     color: #f8fafc;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-texture {
+    opacity: 0.04;
+    position: absolute;
+    border-radius: inherit;
+    inset: 0px;
+    background-size: 7.2px;
+    background-image: url("/texture2.png");
+    border: 0px;
+    background-repeat: repeat;
+    background-position: left top;
+    z-index: -1;
   }
   .animation {
-    min-width: 100vw;
+    position: relative;
+    width: 96%;
     min-height: 100vh;
+    background: var(--stemBlue);
+    padding: 24px;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .animation .head {
@@ -702,17 +687,20 @@
     text-align: center;
 
     h1 {
-      font-weight: 600;
-      font-size: 2rem;
+      font-size: 30px;
+      font-weight: 700;
       margin-bottom: 0.5rem;
+      font-family: var(--font-5);
+      color: var(--stemOrangeBlur3);
 
       @media (min-width: 768px) {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
     }
 
     p {
       color: #94a3b8;
+      font-size: 18px;
     }
   }
 
@@ -781,7 +769,7 @@
     }
   }
 }
-
+/* JOIN US */
 @media screen {
   .join-us {
     background-image: url("/setup.jpeg");
@@ -799,7 +787,11 @@
   }
   .join-us h1 {
     color: #d3d2cf;
-    font-family: var(--font-2);
+    font-family: var(--font-5);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 50px;
   }
   .action {
     display: flex;
