@@ -1,7 +1,8 @@
 import Card from "../components/Card";
+
 function About() {
   return (
-    <section className="container mt-84px">
+    <section className=" mt-84px">
       <Card
         title="Lorem ipsum dolor sit amet"
         href="/"

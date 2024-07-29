@@ -1,10 +1,11 @@
 import Stem from "../components/Stem";
 import Card from "../components/Card";
+import Animation from "../components/Animation";
 
 function Home() {
   return (
     <main>
-      <section className="relative flex-between w-100% md:flex-row xs:flex-col xs:pt-134px sm:px-50px xl:px-100px gap-8 min-h-[100vh] max-w-1024px">
+      <section className="relative flex-between w-100% md:flex-row xs:flex-col xs:pt-134px sm:px-50px xl:px-100px gap-8 min-h-620px max-w-1024px">
         <div className="grid"></div>
         <div className="md:w-50% w-100% h-100%">
           <div className="card-info w-100% h-100% flex-center flex-col gap-8">
@@ -20,7 +21,9 @@ function Home() {
           </div>
         </div>
         <div className="stem lg:w-400px lg:h-400px md:w-300px md:h-300px sm:w-350px sm:h-350px xs:w-300px xs:h-300px">
-          <Stem />
+          <div className="wrapper">
+            <Stem />
+          </div>
         </div>
       </section>
       <section id="services" className="text-gray-700 body-font">
@@ -258,16 +261,31 @@ function Home() {
         </div>
       </section>
       <section>
-        <Card
-          title="Lorem ipsum dolor sit amet"
-          href="/"
-          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-"
-        />
+        <div className="join-us">
+          <h1 className="text-2xl text-center md:text-left font-semibold text-white">
+            Participate in Meetups and Unlock Your Creative Potential
+          </h1>
+          <div className="action">
+            <a className="mt-3 learn-more-link inline-flex items-center text-white hover ">
+              Join Now
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </section>
       <section className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full">
+          <div className="flex flex-col text-center w-full pb-24">
             <h2 className="text-xs blue tracking-widest font-medium title-font mb-1">
               STEMLAB INOVATIVES
             </h2>
@@ -275,286 +293,132 @@ function Home() {
               OUR PROGRAMS
             </h1>
           </div>
-          <div className="container px-5 py-24 mx-auto flex flex-wrap">
-            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/600x600/edf2f7/a5afbd"
-              />
+          <div className="p-5 flex-center flex-row gap-5">
+            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+              <div className="relative w-500px h-400px">
+                <span className="internship"></span>
+              </div>
             </div>
-            <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 blue mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
+            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+              <div className="w-500px h-400px flex-evenly flex-col flex-wrap">
+                <div className="flex flex-col items-center p-20px">
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                      S.I.W.E.S
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    S.I.W.E.S
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                  <a className="mt-3 learn-more-link blue inline-flex items-center">
-                    Learn More
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 blue mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Internship
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                  <a className="mt-3 learn-more-link blue inline-flex items-center">
-                    Learn More
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+                <div className="flex flex-col items-center p-20px">
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                      Internship
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 blue mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
+            </div>
+          </div>
+          <div className="p-5 flex-center flex-row gap-5">
+            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+              <div className="w-500px h-400px flex-evenly flex-col flex-wrap">
+                <div className="flex flex-col items-center p-20px">
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                      S.I.W.E.S
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Kids Boot Camp
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                  <a className="mt-3 learn-more-link blue inline-flex items-center">
-                    Learn More
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+                <div className="flex flex-col items-center p-20px">
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                      Internship
+                    </h2>
+                    <p className="leading-relaxed text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    </p>
+                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+              <div className="relative w-500px h-400px">
+                <span className="internship"></span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="text-gray-700 body-font border-t border-gray-200">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Our Team
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven`&lsquo;`t heard of them.
-            </p>
-          </div>
-          <div className="flex flex-wrap -m-2">
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/80x80/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Holden Caulfield
-                  </h2>
-                  <p className="text-gray-500">UI Designer</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/84x84/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Henry Letham
-                  </h2>
-                  <p className="text-gray-500">CTO</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/88x88/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Oskar Blinde
-                  </h2>
-                  <p className="text-gray-500">Founder</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/90x90/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    John Doe
-                  </h2>
-                  <p className="text-gray-500">DevOps</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/94x94/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Martin Eden
-                  </h2>
-                  <p className="text-gray-500">Software Engineer</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/98x98/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Boris Kitua
-                  </h2>
-                  <p className="text-gray-500">UX Researcher</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/100x90/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Atticus Finch
-                  </h2>
-                  <p className="text-gray-500">QA Engineer</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/104x94/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Alper Kamu
-                  </h2>
-                  <p className="text-gray-500">System</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/108x98/edf2f7/a5afbd"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Rodrigo Monchi
-                  </h2>
-                  <p className="text-gray-500">Product Manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section className="animation-container">
+        <Animation />
       </section>
       <section className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto">
@@ -586,6 +450,14 @@ function Home() {
             <p className="text-gray-500">Senior Product Designer</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Card
+          title="Lorem ipsum dolor sit amet"
+          href="/"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"
+        />
       </section>
     </main>
   );
