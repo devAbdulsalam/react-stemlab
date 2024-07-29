@@ -297,7 +297,7 @@ function Home() {
             </h1>
           </div>
           <section className="px-5 flex-center flex-col md:flex-row gap-5">
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
               <div className="relative w-100% h-100%">
                 <img
                   src="/images/meeting.jpeg"
@@ -305,7 +305,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
               <div className="p-10">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   Finance Workshops
@@ -333,7 +333,7 @@ function Home() {
             </div>
           </section>
           <section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
               <div className="relative w-100% h-100%">
                 <img
                   src="images/pitch.jpeg"
@@ -341,7 +341,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
               <div className="p-10">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   Startup Incubation
@@ -368,7 +368,7 @@ function Home() {
             </div>
           </section>
           <section className="px-5 flex-center flex-col md:flex-row gap-5">
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
               <div className="relative w-100% h-100%">
                 <img
                   src="images/womennn.jpeg"
@@ -376,7 +376,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
               <div className="p-10">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   Community-Based Business Development Training
@@ -404,12 +404,12 @@ function Home() {
             </div>
           </section>
           <section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
               <div className="relative w-100% h-100%">
                 <span className="internship"></span>
               </div>
             </div>
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
               <div className="p-10">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   S.I.W.E.S / Internship
@@ -438,12 +438,12 @@ function Home() {
             </div>
           </section>
           <section className="px-5 flex-center  flex-col md:flex-row gap-5">
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
               <div className="relative w-100% h-100%">
                 <span className="bootcamp"></span>
               </div>
             </div>
-            <div className="w-300px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+            <div className="w-320px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
               <div className="p-10">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   Kids Holiday Bootcamps
