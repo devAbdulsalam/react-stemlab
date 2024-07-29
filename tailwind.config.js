@@ -72,8 +72,7 @@ export default {
         logo: "url('/logo.png')",
       },
       boxShadow: {
-        custom:
-          "4px 4px 6px rgba(0, 0, 0, 0.1), 4px -4px 6px rgba(0, 0, 0, 0.1)",
+        custom: "0 0 10px 2px rgba(0, 0, 0, 0.15)",
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],

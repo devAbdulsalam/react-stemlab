@@ -16,7 +16,14 @@ const TAGS = [
   "Tailwind",
   "React",
   "Next.js",
+  "Node.Js",
+  "Git",
+  "Angular",
+  "TypeScript",
+  "Nuxt.js",
   "Gatsby",
+  "Vue",
+  "MongoDB",
   "UI/UX",
   "SVG",
   "animation",
@@ -65,8 +72,11 @@ Tag.propTypes = {
 const Animation = () => (
   <div className="animation">
     <div className="head">
-      <h1>Infinite Scroll Animation</h1>
-      <p>CSS only, content independent, bi-directional, customizable</p>
+      <h1>Master the Modern Web Development Stack</h1>
+      <p>
+        Empower Your Skills with Leading Technologies in Frontend, Backend, and
+        Design
+      </p>
     </div>
     <div className="tag-list">
       {[...new Array(ROWS)].map((_, i) => (

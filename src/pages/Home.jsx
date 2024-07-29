@@ -1,5 +1,4 @@
 import Stem from "../components/Stem";
-import Card from "../components/Card";
 import Animation from "../components/Animation";
 
 function Home() {
@@ -283,8 +282,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="text-gray-700 body-font border-t border-gray-200">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="programs-container text-gray-700 border-t border-gray-200">
+        <div className="px-5 py-24 mx-auto boder border-red-500">
           <div className="flex flex-col text-center w-full pb-24">
             <h2 className="text-xs blue tracking-widest font-medium title-font mb-1">
               STEMLAB INOVATIVES
@@ -293,16 +292,16 @@ function Home() {
               OUR PROGRAMS
             </h1>
           </div>
-          <div className="p-5 flex-center flex-row gap-5">
-            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+          <div className="programs-section p-5 flex-center flex-col lg:flex-row gap-5">
+            <div className="lg:w-40% w-full flex-center shadow-custom">
               <div className="relative w-500px h-400px">
                 <span className="internship"></span>
               </div>
             </div>
-            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+            <div className="lg:w-40% w-full flex-center shadow-custom bg-white">
               <div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-                <div className="flex flex-col items-center p-20px">
-                  <div className="flex-grow">
+                <div className="flex-between flex-col p-20px gap-20px ">
+                  <div>
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                       S.I.W.E.S
                     </h2>
@@ -310,24 +309,8 @@ function Home() {
                       Blue bottle crucifix vinyl post-ironic four dollar toast
                       vegan taxidermy. Gastropub indxgo juice poutine.
                     </p>
-                    <a className="mt-3 learn-more-link blue inline-flex items-center">
-                      Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
                   </div>
-                </div>
-                <div className="flex flex-col items-center p-20px">
-                  <div className="flex-grow">
+                  <div>
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                       Internship
                     </h2>
@@ -335,7 +318,7 @@ function Home() {
                       Blue bottle crucifix vinyl post-ironic four dollar toast
                       vegan taxidermy. Gastropub indxgo juice poutine.
                     </p>
-                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                    <a className="mt-20px learn-more-link blue inline-flex items-center hover">
                       Learn More
                       <svg
                         fill="none"
@@ -354,44 +337,23 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="p-5 flex-center flex-row gap-5">
-            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+          <div className="programs-section px-5 flex-center flex-col lg:flex-row gap-5">
+            <div className="lg:w-40% w-full flex-center shadow-custom">
               <div className="w-500px h-400px flex-evenly flex-col flex-wrap">
                 <div className="flex flex-col items-center p-20px">
                   <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                      S.I.W.E.S
+                      Kids Camp
                     </h2>
                     <p className="leading-relaxed text-base">
                       Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
+                      vegan taxidermy. Gastropub indxgo juice poutine. Blue
+                      bottle crucifix vinyl post-ironic four dollar toast vegan
+                      taxidermy. Gastropub indxgo juice poutine. Blue bottle
+                      crucifix vinyl post-ironic four dollar toast vegan
+                      taxidermy. Gastropub indxgo juice poutine.
                     </p>
-                    <a className="mt-3 learn-more-link blue inline-flex items-center">
-                      Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center p-20px">
-                  <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                      Internship
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
-                    </p>
-                    <a className="mt-3 learn-more-link blue inline-flex items-center">
+                    <a className="mt-3 learn-more-link inline-flex items-center hover">
                       Learn More
                       <svg
                         fill="none"
@@ -409,9 +371,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
+            <div className="lg:w-40% w-full flex-center shadow-custom">
               <div className="relative w-500px h-400px">
-                <span className="internship"></span>
+                <span className="bootcamp"></span>
               </div>
             </div>
           </div>
@@ -450,14 +412,6 @@ function Home() {
             <p className="text-gray-500">Senior Product Designer</p>
           </div>
         </div>
-      </section>
-      <section>
-        <Card
-          title="Lorem ipsum dolor sit amet"
-          href="/"
-          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-"
-        />
       </section>
     </main>
   );
