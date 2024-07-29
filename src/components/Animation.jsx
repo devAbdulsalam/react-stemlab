@@ -69,7 +69,7 @@ const Animation = () => (
   <div className="animation">
     <div className="card-texture"></div>
     <div className="head">
-      <h1> OUR MISSION & VISION</h1>
+      <h1>OUR MISSION & VISION</h1>
       <div className="text-lg mt-4 max-w-xl mx-auto leading-relaxed">
         <p className="">
           Our mission at StemLab is to help empower women, youth, and
@@ -103,3 +103,4 @@ const Animation = () => (
 );
 
 export default Animation;
+git add . && git commit -m "adjustments" && git pull origin main && git push origin main
