@@ -53,8 +53,8 @@ function Home() {
                   <p className="leading-relaxed text-base">
                     We specialize in creating, launching, and maintaining
                     robust, scalable software solutions that meet the highest
-                    quality standards and address our client`&lsquo;`s specific
-                    needs.
+                    quality standards and address our client&lsquo;s specific
+                    needs
                   </p>
                   <a className="mt-3 learn-more-link blue inline-flex items-center">
                     Learn More
