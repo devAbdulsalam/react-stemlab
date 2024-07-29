@@ -103,4 +103,3 @@ const Animation = () => (
 );
 
 export default Animation;
-git add . && git commit -m "adjustments" && git pull origin main && git push origin main
