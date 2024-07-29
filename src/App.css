@@ -26,6 +26,23 @@
   --tiber: #0f0844;
   --white: #fff;
   --gray: #5d5d5d;
+  --font-1: "Josefin Sans", sans-serif;
+  --font-2: "Montserrat", sans-serif;
+  --font-3: "Roboto", "Poppins", "Fira Sans", sans-serif;
+  /* --font-4: "Lato", sans-serif; */
+  --font-5: "Open Sans", sans-serif;
+  --stemBlueBlur: rgb(3, 31, 75, 0.1);
+  --stemBlueBlur1: rgb(3, 31, 75, 0.8);
+  --stemBlueBlur2: rgb(3, 31, 75, 0.6);
+  --stemBlue: #031f4b;
+  --stemOrange: #ff7733;
+  --stemOrangeBlur: rgb(255, 119, 51, 0.8);
+  --stemOrangeBlur1: rgb(255, 119, 51, 0.1);
+  --stemOrangeBlur2: rgb(255, 119, 51, 0.6);
+  --elephant: #09383e;
+  --tiber: #0f0844;
+  --white: #fff;
+  --gray: #5d5d5d;
 }
 
 body {
@@ -157,4 +174,8 @@ body {
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
   }
+}
+
+.debug {
+  border: 1px red solid;
 }
