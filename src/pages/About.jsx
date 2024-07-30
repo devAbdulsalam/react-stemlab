@@ -1,30 +1,30 @@
-import Actions from "../components/Actions";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Actions from '../components/Actions';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      easing: "ease-in-out", // default easing for AOS animations
-    });
-    AOS.refresh();
-  }, []);
+	useEffect(() => {
+		AOS.init({
+			duration: 2000,
+			easing: 'ease-in-out', // default easing for AOS animations
+		});
+		AOS.refresh();
+	}, []);
 
-  return (
+	return (
 		<>
 			<section className="text-gray-700 body-font ">
-				<div className="container px-5 py-24 mx-auto">
+				<div className="w-full md:container px-5 py-24 mx-auto">
 					<div className="flex flex-col text-center w-full">
 						<h2 className="text-xs text-secondary tracking-widest font-medium title-font mb-1">
-							STEM INNOVATORS
+							STEM INNOVATORS LAB
 						</h2>
 						<h1 className="sm:text-3xl text-2xl font-semibold title-font text-gray-900">
 							ABOUT US
 						</h1>
 					</div>
-					<div className="container px-5 pt-24 mx-auto flex flex-wrap">
+					<div className="w-full md:container px-5 pt-24 mx-auto flex flex-wrap">
 						<div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
 							<img
 								alt="feature"
@@ -47,7 +47,7 @@ function About() {
 										<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 									</svg>
 								</div>
-								<div className="flex-grow text-base leading-relaxed">
+								<div className="flex-grow text-base leading-relaxed text-left">
 									<h2 className="text-secondary text-lg title-font font-medium mb-3">
 										STEM LAB
 									</h2>

@@ -26,7 +26,7 @@ function Home() {
 				</div>
 			</section>
 			<section id="services" className="text-gray-700 body-font">
-				<div className="container px-5 py-24 mx-auto">
+				<div className="md:container px-5 py-24 mx-auto">
 					<div className="flex flex-col text-center w-full mb-20">
 						<h2 className="text-xs blue tracking-widest font-medium title-font mb-1">
 							STEM INNOVATORS LAB
