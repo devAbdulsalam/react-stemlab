@@ -1,10 +1,63 @@
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Contact() {
+	const [email, setEmail] = useState('');
+	const [name, setName] = useState('');
+	const [message, setMessage] = useState('');
+	const [phone, setPhone] = useState('');
+	const [isCorrect, setIsCorrect] = useState(true);
+
+	useEffect(() => {
+		AOS.init({
+			duration: 2000,
+			easing: 'ease-in-out', // default easing for AOS animations
+		});
+		AOS.refresh();
+	}, []);
+	useEffect(() => {
+		if (!email || !message || !name || !phone) {
+			setIsCorrect(false);
+		} else {
+			setIsCorrect(true);
+		}
+	}, [email, name, phone, message]);
+
+	const handleSubmit = async () => {
+		fetch('action="https://formspree.io/f/xeqdgwke', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				email,
+				name,
+				message,
+				phone,
+			}),
+		})
+			.then((response) => {
+				console.log(response);
+				console.log('Form successfully submitted');
+			})
+			.then(() => {
+				setEmail('');
+				setName('');
+				setPhone('');
+				setMessage('');
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
+	};
+
 	return (
 		<section className="bg-bg py-20 md:px-20 px-5 lg:py-[120px] overflow-hidden relative z-10">
-			<div className="container mt-10">
+			<div className="w-full mx-3 md:container mt-10 md:mx-auto">
 				<div className="flex flex-wrap lg:justify-between -mx-4">
 					<div className="w-full lg:w-1/2 xl:w-6/12 px-4">
-						<div className="max-w-[570px] mb-12 lg:mb-0">
+						<div className=" max-w-[570px] mb-12 lg:mb-0">
 							{/* <!-- <span className="block mb-4 text-base text-primary font-semibold"> Contact Us </span> --> */}
 							<h2
 								className="
@@ -146,12 +199,16 @@ function Contact() {
 						</div>
 					</div>
 					<div className="w-full lg:w-1/2 xl:w-5/12 px-4">
-						<div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-							<form data-aos="fade-right">
+						<div className="bg-white relative rounded-lg p-4 md:p-8 sm:p-6 shadow-lg">
+							<form data-aos="fade-right" className="w-full">
 								<div className="mb-6">
 									<input
 										type="text"
 										placeholder="Your Name"
+										name="name"
+										required
+										value={name}
+										onChange={(e) => setName(e.target.value)}
 										className="
                         w-full
                         rounded
@@ -168,8 +225,13 @@ function Contact() {
 								<div className="mb-6">
 									<input
 										type="email"
+										name="email"
+										required
+										value={email}
+										onChange={(e) => setEmail(e.target.value)}
 										placeholder="Your Email"
 										className="
+										
                         w-full
                         rounded
                         py-3
@@ -185,6 +247,10 @@ function Contact() {
 								<div className="mb-6">
 									<input
 										type="text"
+										name="phone"
+										required
+										value={phone}
+										onChange={(e) => setPhone(e.target.value)}
 										placeholder="Your Phone"
 										className="
                         w-full
@@ -202,6 +268,10 @@ function Contact() {
 								<div className="mb-6">
 									<textarea
 										rows="6"
+										name="message"
+										value={message}
+										onChange={(e) => setMessage(e.target.value)}
+										required
 										placeholder="Your Message"
 										className="
                         w-full
@@ -219,17 +289,24 @@ function Contact() {
 								</div>
 								<div>
 									<button
+										onSubmit={handleSubmit}
+										disabled={!isCorrect}
 										type="submit"
-										className="
+										className={`
                         w-full
                         text-white
-                        bg-primary2
+                        bg-primary
+						${
+							isCorrect
+								? 'cursor-pointer bg-opacity-100 border border-primary'
+								: 'cursor-not-allowed bg-opacity-80  '
+						}
                         rounded
-                        border border-primary2
+                       
                         p-3
                         transition
                         hover:bg-opacity-90
-                        "
+                        `}
 									>
 										Send Message
 									</button>
