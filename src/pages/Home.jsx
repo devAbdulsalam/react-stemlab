@@ -296,7 +296,7 @@ function Home() {
 							OUR PROGRAMS
 						</h1>
 					</div>
-					<section className="px-5 flex-center flex-col md:flex-row gap-5">
+					<section className="px-2 md:px-5 flex-center flex-col md:flex-row gap-5">
 						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -332,7 +332,7 @@ function Home() {
 							</div>
 						</div>
 					</section>
-					<section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
+					<section className="px-2 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
 						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -367,7 +367,7 @@ function Home() {
 							</div>
 						</div>
 					</section>
-					<section className="px-5 flex-center flex-col md:flex-row gap-5">
+					<section className="px-2 md:px-5 flex-center flex-col md:flex-row gap-5">
 						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -403,7 +403,7 @@ function Home() {
 							</div>
 						</div>
 					</section>
-					<section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
+					<section className="px-2 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
 						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<span className="internship"></span>
@@ -437,7 +437,7 @@ function Home() {
 							</div>
 						</div>
 					</section>
-					<section className="px-5 flex-center  flex-col md:flex-row gap-5">
+					<section className="px-2 md:px-5 flex-center  flex-col md:flex-row gap-5">
 						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<span className="bootcamp"></span>

@@ -24,16 +24,37 @@ function Contact() {
 		}
 	}, [email, name, phone, message]);
 
-	const handleSubmit = () => {
-		setEmail('');
-		setName('');
-		setPhone('');
-		setMessage('');
+	const handleSubmit = async () => {
+		fetch('action="https://formspree.io/f/xeqdgwke', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				email,
+				name,
+				message,
+				phone,
+			}),
+		})
+			.then((response) => {
+				console.log(response);
+				console.log('Form successfully submitted');
+			})
+			.then(() => {
+				setEmail('');
+				setName('');
+				setPhone('');
+				setMessage('');
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
 	};
 
 	return (
 		<section className="bg-bg py-20 md:px-20 px-5 lg:py-[120px] overflow-hidden relative z-10">
-			<div className="container mt-10 mx-auto">
+			<div className="w-full mx-3 md:container mt-10 md:mx-auto">
 				<div className="flex flex-wrap lg:justify-between -mx-4">
 					<div className="w-full lg:w-1/2 xl:w-6/12 px-4">
 						<div className=" max-w-[570px] mb-12 lg:mb-0">
@@ -179,12 +200,7 @@ function Contact() {
 					</div>
 					<div className="w-full lg:w-1/2 xl:w-5/12 px-4">
 						<div className="bg-white relative rounded-lg p-4 md:p-8 sm:p-6 shadow-lg">
-							<form
-								data-aos="fade-right"
-								action="https://formspree.io/f/xeqdgwke"
-								method="POST"
-								className="w-full"
-							>
+							<form data-aos="fade-right" className="w-full">
 								<div className="mb-6">
 									<input
 										type="text"
@@ -273,7 +289,7 @@ function Contact() {
 								</div>
 								<div>
 									<button
-										onClick={handleSubmit}
+										onSubmit={handleSubmit}
 										disabled={!isCorrect}
 										type="submit"
 										className={`
