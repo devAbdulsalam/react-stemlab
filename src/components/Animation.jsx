@@ -68,7 +68,7 @@ const Animation = () => (
 	<div className="animation">
 		<div className="head">
 			<h1 className="text-secondary"> OUR MISSION & VISION</h1>
-			<div className="text-lg font-semibold mt-4 max-w-xl mx-auto leading-relaxed">
+			<div className="text-sm md:text-lg font-semibold mt-4 max-w-xl mx-auto leading-relaxed">
 				<p className="">
 					Our mission at StemLab is to help empower women, youth, and
 					marginalized communities through innovative educational programs and

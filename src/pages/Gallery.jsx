@@ -12,7 +12,7 @@ function Gallery() {
 	}, []);
 
 	return (
-		<section className="container mt-84px">
+		<section className="container mt-84px mx-auto">
 			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
 				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center mb-3">
