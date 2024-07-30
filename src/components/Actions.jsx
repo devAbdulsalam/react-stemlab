@@ -29,7 +29,7 @@ function Actions() {
 							business. As key players in the global startup ecosystem, these
 							hubs are essential for the growth and success of new businesses.
 						</p>
-						<p className="">
+						<p className="mt-3">
 							Stem Innovations Lab offers a unique environment that fosters
 							innovation, experimentation, and risk-taking—critical components
 							of startup growth. By creating a supportive and collaborative
