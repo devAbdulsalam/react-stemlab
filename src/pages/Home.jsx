@@ -29,7 +29,7 @@ function Home() {
 				<div className="container px-5 py-24 mx-auto">
 					<div className="flex flex-col text-center w-full mb-20">
 						<h2 className="text-xs blue tracking-widest font-medium title-font mb-1">
-							STEMLAB INOVATIVES
+							STEM INNOVATORS LAB
 						</h2>
 						<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
 							OUR SERVICES
@@ -284,228 +284,195 @@ function Home() {
 				</div>
 			</section>
 			<section className="text-gray-700 body-font border-t border-gray-200">
-				<div className="container px-5 py-24 mx-auto">
-					<div className="flex flex-col text-center w-full pb-24">
-						<h2 className="text-xs blue tracking-widest font-medium title-font mb-1">
+				<div
+					id="programs"
+					className="flex flex-col gap-5 px-5 py-24 bg-gray-100"
+				>
+					<div className="flex flex-col text-center w-full mb-20">
+						<h3 className="text-xs blue tracking-widest font-medium title-font mb-1">
 							STEMLAB INOVATIVES
-						</h2>
+						</h3>
 						<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
 							OUR PROGRAMS
 						</h1>
 					</div>
-					<div className="p-5 flex-center flex-row gap-5">
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="relative w-500px h-400px">
+					<section className="px-5 flex-center flex-col md:flex-row gap-5">
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+							<div className="relative w-100% h-100%">
 								<img
 									src="/images/meeting.jpeg"
 									className="w-full h-full object-cover object-center"
 								/>
 							</div>
 						</div>
-						<div className="lg:w-40% w-full flex-center shadow-custom bg-white">
-							<div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-								<div className="flex-between flex-col p-20px gap-20px ">
-									<div>
-										<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-											Finance Workshops
-										</h2>
-										<p className="leading-relaxed text-base">
-											Workshops aimed at educating women and youth on how to
-											access funding, including grants, loans, and investment
-											opportunities.
-										</p>
-										<a className="mt-20px learn-more-link blue inline-flex items-center hover">
-											Learn More
-											<svg
-												fill="none"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												className="w-4 h-4 ml-2"
-												viewBox="0 0 24 24"
-											>
-												<path d="M5 12h14M12 5l7 7-7 7"></path>
-											</svg>
-										</a>
-									</div>
-								</div>
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+							<div className="p-10">
+								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+									Finance Workshops
+								</h2>
+								<p className="leading-relaxed text-base">
+									Workshops aimed at educating women and youth on how to access
+									funding, including grants, loans, and investment
+									opportunities.
+								</p>
+								<a className="mt-20px learn-more-link blue inline-flex items-center hover">
+									Learn More
+									<svg
+										fill="none"
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										className="w-4 h-4 ml-2"
+										viewBox="0 0 24 24"
+									>
+										<path d="M5 12h14M12 5l7 7-7 7"></path>
+									</svg>
+								</a>
 							</div>
 						</div>
-					</div>
-					<div className="p-5 flex-center flex-row-reverse gap-5">
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="relative w-500px h-400px">
+					</section>
+					<section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+							<div className="relative w-100% h-100%">
 								<img
 									src="images/pitch.jpeg"
 									className="w-full h-full object-cover object-center"
 								/>
 							</div>
 						</div>
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-								<div className="flex flex-col items-center p-20px">
-									<div className="flex flex-col items-center p-20px">
-										<div className="flex-grow">
-											<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-												Startup Incubation
-											</h2>
-											<p className="leading-relaxed text-base">
-												We organized events to connect entrepreneurs, investors,
-												and key players in the startup ecosystem
-											</p>
-											<a className="mt-20px learn-more-link blue inline-flex items-center hover">
-												Learn More
-												<svg
-													fill="none"
-													stroke="currentColor"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													className="w-4 h-4 ml-2"
-													viewBox="0 0 24 24"
-												>
-													<path d="M5 12h14M12 5l7 7-7 7"></path>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+							<div className="p-10">
+								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+									Startup Incubation
+								</h2>
+								<p className="leading-relaxed text-base">
+									We organized events to connect entrepreneurs, investors, and
+									key players in the startup ecosystem
+								</p>
+								<a className="mt-20px learn-more-link blue inline-flex items-center hover">
+									Learn More
+									<svg
+										fill="none"
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										className="w-4 h-4 ml-2"
+										viewBox="0 0 24 24"
+									>
+										<path d="M5 12h14M12 5l7 7-7 7"></path>
+									</svg>
+								</a>
 							</div>
 						</div>
-					</div>
-					<div className="p-5 flex-center flex-row gap-5">
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="relative w-500px h-400px">
+					</section>
+					<section className="px-5 flex-center flex-col md:flex-row gap-5">
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+							<div className="relative w-100% h-100%">
 								<img
 									src="images/womennn.jpeg"
 									className="w-full h-full object-cover object-center"
 								/>
 							</div>
 						</div>
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-								<div className="flex flex-col items-center p-20px">
-									<div className="flex flex-col items-center p-20px">
-										<div className="flex-grow">
-											<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-												Community-Based Business Development Training
-											</h2>
-											<p className="leading-relaxed text-base">
-												Training sessions conducted in local communities to
-												support aspiring entrepreneurs from disadvantaged
-												backgrounds, focusing on business planning and
-												management.
-											</p>
-											<a className="mt-20px learn-more-link blue inline-flex items-center hover">
-												Learn More
-												<svg
-													fill="none"
-													stroke="currentColor"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													className="w-4 h-4 ml-2"
-													viewBox="0 0 24 24"
-												>
-													<path d="M5 12h14M12 5l7 7-7 7"></path>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+							<div className="p-10">
+								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+									Community-Based Business Development Training
+								</h2>
+								<p className="leading-relaxed text-base">
+									Training sessions conducted in local communities to support
+									aspiring entrepreneurs from disadvantaged backgrounds,
+									focusing on business planning and management.
+								</p>
+								<a className="mt-20px learn-more-link blue inline-flex items-center hover">
+									Learn More
+									<svg
+										fill="none"
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										className="w-4 h-4 ml-2"
+										viewBox="0 0 24 24"
+									>
+										<path d="M5 12h14M12 5l7 7-7 7"></path>
+									</svg>
+								</a>
 							</div>
 						</div>
-					</div>
-					<div className="p-5 flex-center flex-row gap-5">
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-								<div className="flex flex-col items-center p-20px">
-									<div className="flex-grow">
-										<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-											S.I.W.E.S / Internship
-										</h2>
-										<p className="leading-relaxed text-base">
-											Our SIWES program is designed to equip you with the skills
-											and expertise needed to succeed in today `&apos;`s tech
-											landscape.
-										</p>
-										<ul className="leading-relaxed text-base">
-											<li>
-												Hands-on practical experience in software development
-											</li>
-											<li>Public speaking training to boost your confidence</li>
-											<li>Idea generation and incubation support</li>
-											<li>
-												Basic management skills to help you lead and collaborate
-												effectively
-											</li>
-										</ul>
-										<a className="mt-20px learn-more-link blue inline-flex items-center hover">
-											Learn More
-											<svg
-												fill="none"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												className="w-4 h-4 ml-2"
-												viewBox="0 0 24 24"
-											>
-												<path d="M5 12h14M12 5l7 7-7 7"></path>
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="lg:w-40% w-full rounded-lg flex-center shadow-custom">
-							<div className="relative w-500px h-400px">
+					</section>
+					<section className="px-5 flex-center flex-col md:flex-row-reverse gap-5">
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+							<div className="relative w-100% h-100%">
 								<span className="internship"></span>
 							</div>
 						</div>
-					</div>
-					<div className="programs-section px-5 flex-center flex-col lg:flex-row gap-5">
-						<div className="lg:w-40% w-full flex-center shadow-custom">
-							<div className="w-500px h-400px flex-evenly flex-col flex-wrap">
-								<div className="flex flex-col items-center p-20px">
-									<div className="flex-grow">
-										<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-											Kids Holiday Bootcamps
-										</h2>
-										<p className="leading-relaxed text-base">
-											Regularly organized summer bootcamps for kids at the
-											STEMLAB Hub, offering courses in Canva design, Python
-											programming, Virtual Reality, Game Development, and Web
-											Development.
-										</p>
-										<a className="mt-3 learn-more-link inline-flex items-center hover">
-											Learn More
-											<svg
-												fill="none"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												className="w-4 h-4 ml-2"
-												viewBox="0 0 24 24"
-											>
-												<path d="M5 12h14M12 5l7 7-7 7"></path>
-											</svg>
-										</a>
-									</div>
-								</div>
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+							<div className="p-10">
+								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+									S.I.W.E.S / Internship
+								</h2>
+								<p className="leading-relaxed text-base">
+									Our SIWES program is designed to equip you with the skills and
+									expertise needed to succeed in today&apos;s tech landscape. We
+									provide hands-on practical experience in software development
+									and much more.
+								</p>
+								<a className="mt-20px learn-more-link blue inline-flex items-center hover">
+									Learn More
+									<svg
+										fill="none"
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										className="w-4 h-4 ml-2"
+										viewBox="0 0 24 24"
+									>
+										<path d="M5 12h14M12 5l7 7-7 7"></path>
+									</svg>
+								</a>
 							</div>
 						</div>
-						<div className="lg:w-40% w-full flex-center shadow-custom">
-							<div className="relative w-500px h-400px">
+					</section>
+					<section className="px-5 flex-center  flex-col md:flex-row gap-5">
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
+							<div className="relative w-100% h-100%">
 								<span className="bootcamp"></span>
 							</div>
 						</div>
-					</div>
+						<div className="w-340px h-450px min-h-450px lg:h-500px lg:w-500px shadow-custom flex-center bg-white">
+							<div className="p-10">
+								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+									Kids Holiday Bootcamps
+								</h2>
+								<p className="leading-relaxed text-base">
+									Regularly organized summer bootcamps for kids at the STEMLAB
+									Hub, offering courses in Canva design, Python programming,
+									Virtual Reality, Game Development, and Web Development.
+								</p>
+								<a className="mt-3 learn-more-link inline-flex items-center hover">
+									Learn More
+									<svg
+										fill="none"
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										className="w-4 h-4 ml-2"
+										viewBox="0 0 24 24"
+									>
+										<path d="M5 12h14M12 5l7 7-7 7"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</section>
 				</div>
 			</section>
-			<section className="animation-container">
+			<section className="animation-container py-24 bg-gray-100">
 				<Animation />
 			</section>
 			<section className="text-gray-700 body-font border-t border-gray-200">
@@ -524,7 +491,7 @@ function Home() {
 							mentorship and training programs provided us with the technical
 							skills and business acumen needed to scale our business. The
 							supportive environment and access to resources at StemLab have
-							been invaluable. We couldn`&apos;`t have achieved our success
+							been invaluable. We couldn&apos;t have achieved our success
 							without them.
 						</p>
 						<span className="inline-block h-1 w-10 rounded bgBlue mt-8 mb-6"></span>

@@ -22,21 +22,31 @@ function Actions() {
 					</div>
 					<div className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-base">
 						<p className="">
-							We are an ecosystem built to support ICT focused tech
-							entrepreneurs and young individuals integrating the STEM pedagogy.
+							Stem Innovations Lab (Stem Lab) play a crucial role in
+							accelerating and nurturing startups. By providing access to
+							resources, expertise, and networks, technology hubs help young
+							companies navigate the challenges of starting and growing a
+							business. As key players in the global startup ecosystem, these
+							hubs are essential for the growth and success of new businesses.
 						</p>
 						<p className="">
-							We are an ecosystem built to support ICT focused tech
-							entrepreneurs and young individuals integrating the STEM pedagogy.
+							Stem Innovations Lab offers a unique environment that fosters
+							innovation, experimentation, and risk-taking—critical components
+							of startup growth. By creating a supportive and collaborative
+							culture, we help startups overcome obstacles and achieve their
+							goals faster than they would on their own. Our services include
+							access to funding, mentorship, training, and opportunities for
+							collaboration and partnerships, enabling startups to secure
+							investment and grow sustainably.
 						</p>
 					</div>
 				</div>
 				<div className="flex flex-wrap -m-4">
-					<div className="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-left">
-						<div className="bg-gray-100 p-6 rounded-lg">
+					<div className="xl:w-1/4 md:w-1/2 p-2" data-aos="fade-left">
+						<div className="bg-gray-100 p-4 rounded-lg">
 							<img
 								className="h-40 rounded w-full object-cover object-center mb-6"
-								src="/gallery/landscape/5.jpeg"
+								src="/images/womennn.jpeg"
 								alt="content"
 							/>
 							<h3 className="tracking-widest text-primary text-xs font-semibold title-font">
@@ -53,11 +63,11 @@ function Actions() {
 							</p>
 						</div>
 					</div>
-					<div className="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up">
-						<div className="bg-gray-100 p-6 rounded-lg">
+					<div className="xl:w-1/4 md:w-1/2 p-2" data-aos="fade-up">
+						<div className="bg-gray-100 p-4 rounded-lg">
 							<img
 								className="h-40 rounded w-full object-cover object-center mb-6"
-								src="/gallery/landscape/5.jpeg"
+								src="/images/press.jpg"
 								alt="content"
 							/>
 							<h3 className="tracking-widest text-primary text-xs font-semibold title-font">
@@ -74,11 +84,11 @@ function Actions() {
 							</p>
 						</div>
 					</div>
-					<div className="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-up">
-						<div className="bg-gray-100 p-6 rounded-lg">
+					<div className="xl:w-1/4 md:w-1/2 p-2" data-aos="fade-up">
+						<div className="bg-gray-100 p-4 rounded-lg">
 							<img
 								className="h-40 rounded w-full object-cover object-center mb-6"
-								src="./gallery/landscape/4.jpeg"
+								src="./gallery/landscape/2.jpeg"
 								alt="content"
 							/>
 							<h3 className="tracking-widest text-primary text-xs font-semibold title-font">
@@ -96,11 +106,11 @@ function Actions() {
 							</p>
 						</div>
 					</div>
-					<div className="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-right">
-						<div className="bg-gray-100 p-6 rounded-lg">
+					<div className="xl:w-1/4 md:w-1/2 p-2" data-aos="fade-right">
+						<div className="bg-gray-100 p-4 rounded-lg">
 							<img
 								className="h-40 rounded w-full object-cover object-center mb-6"
-								src="./gallery/landscape/4.jpeg"
+								src="/gallery/landscape/5.jpeg"
 								alt="content"
 							/>
 							<h3 className="tracking-widest text-primary text-xs font-semibold title-font">
