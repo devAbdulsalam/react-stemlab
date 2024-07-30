@@ -1,5 +1,5 @@
-import Stem from '../components/Stem';
 import Animation from '../components/Animation';
+import Stem from '../components/Stem';
 
 function Home() {
 	return (
