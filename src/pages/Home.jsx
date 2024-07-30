@@ -290,7 +290,7 @@ function Home() {
 				>
 					<div className="flex flex-col text-center w-full mb-20">
 						<h3 className="text-xs blue tracking-widest font-medium title-font mb-1">
-							STEMLAB INOVATIVES
+							STEMLAB INNOVATORS LAB
 						</h3>
 						<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
 							OUR PROGRAMS
