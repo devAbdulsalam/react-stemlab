@@ -12,9 +12,9 @@ function Gallery() {
 	}, []);
 
 	return (
-		<section className="container mt-84px mx-auto">
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+		<section className="mt-84 px-1  mx-auto">
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 sm:px-5 py-2 mx-auto pt-10 lg:pt-24 md:px-20">
 					<div className="flex justify-center mb-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 mt-10 text-center text-white cursor-default">
 							Startup Incubation
@@ -75,10 +75,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center my-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Capacity-Building Workshops for Women
@@ -141,9 +140,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center mb-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Kids Bootcamps
@@ -205,9 +204,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center mb-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Co-working space
@@ -268,10 +267,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center my-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Mentorship Program for Young Female Entrepreneurs
@@ -334,9 +332,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center my-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Startup Incubation
@@ -397,9 +395,9 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
-			<section className="overflow-hidden text-gray-700 md:my-5 my-10">
-				<div className="container px-5 py-2 mx-auto lg:pt-24 md:px-20">
+			</div>
+			<div className="overflow-hidden text-gray-700 md:my-5 my-10">
+				<div className="md:container px-2 py-2 py-2 mx-auto lg:pt-24 md:px-20">
 					<div className="flex justify-center my-3">
 						<h2 className="bg-secondary hover:bg-primary md:text-base text-sm py-2 px-10 text-center text-white cursor-default">
 							Networking and Community Events
@@ -460,7 +458,7 @@ function Gallery() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</section>
 	);
 }

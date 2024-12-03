@@ -286,7 +286,7 @@ function Home() {
 			<section className="text-gray-700 body-font border-t border-gray-200">
 				<div
 					id="programs"
-					className="flex flex-col gap-5 px-5 py-24 bg-gray-100"
+					className="flex flex-col gap-5 md:px-5 py-24 bg-gray-100"
 				>
 					<div className="flex flex-col text-center w-full mb-20">
 						<h3 className="text-xs blue tracking-widest font-medium title-font mb-1">
@@ -296,7 +296,7 @@ function Home() {
 							OUR PROGRAMS
 						</h1>
 					</div>
-					<section className="px-2 md:px-5 flex-center flex-col md:flex-row gap-5">
+					<div className="p-1  md:px-5 flex-center flex-col md:flex-row gap-5">
 						<div className="mx-6 md:w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -331,8 +331,8 @@ function Home() {
 								</a>
 							</div>
 						</div>
-					</section>
-					<section className="px-2 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
+					</div>
+					<div className="px-12 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
 						<div className="mx-6 md:w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -366,8 +366,8 @@ function Home() {
 								</a>
 							</div>
 						</div>
-					</section>
-					<section className="px-2 md:px-5 flex-center flex-col md:flex-row gap-5">
+					</div>
+					<div className="px-1 md:px-5 flex-center flex-col md:flex-row gap-5">
 						<div className="mx-6 md:w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<img
@@ -402,8 +402,8 @@ function Home() {
 								</a>
 							</div>
 						</div>
-					</section>
-					<section className="px-2 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
+					</div>
+					<div className="px-1 md:px-5 flex-center flex-col md:flex-row-reverse gap-5">
 						<div className="mx-6 md:w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<span className="internship"></span>
@@ -436,8 +436,8 @@ function Home() {
 								</a>
 							</div>
 						</div>
-					</section>
-					<section className="px-2 md:px-5 flex-center  flex-col md:flex-row gap-5">
+					</div>
+					<div className="px-1 md:px-5 flex-center  flex-col md:flex-row gap-5">
 						<div className="mx-6 md:w-340px h-450px min-h-450px lg:h-500px lg:w-500px rounded-lg flex-center shadow-custom">
 							<div className="relative w-100% h-100%">
 								<span className="bootcamp"></span>
@@ -469,7 +469,7 @@ function Home() {
 								</a>
 							</div>
 						</div>
-					</section>
+					</div>
 				</div>
 			</section>
 			<section className="animation-container py-24 bg-gray-100">

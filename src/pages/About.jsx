@@ -24,7 +24,7 @@ function About() {
 							ABOUT US
 						</h1>
 					</div>
-					<div className="w-full md:container px-5 pt-24 mx-auto flex flex-wrap">
+					<div className="w-full md:container px-0.5 md:px-5 pt-24 mx-auto flex flex-wrap">
 						<div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
 							<img
 								alt="feature"
@@ -33,7 +33,7 @@ function About() {
 							/>
 						</div>
 						<div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-							<div className="flex flex-col mb-10 lg:items-start items-center">
+							<div className="flex flex-col mb-10 lg:items-start items-center px-1">
 								<div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-primary mb-5">
 									<svg
 										fill="none"
@@ -47,7 +47,7 @@ function About() {
 										<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 									</svg>
 								</div>
-								<div className="flex-grow text-base leading-relaxed text-left">
+								<div className="flex-grow text-base leading-relaxed text-left px-1">
 									<h2 className="text-secondary text-lg title-font font-medium mb-3">
 										STEM LAB
 									</h2>

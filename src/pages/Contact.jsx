@@ -113,10 +113,11 @@ function Contact() {
 										<i className="fab fa-instagram fa-xl mr-2" /> Stemlab_ng
 									</a>
 									<a
-										href="https://wa.link/xalr68"
+										href="https://api.whatsapp.com/send?phone=+2348162224407"
 										className="text-base text-body-color block"
 									>
-										<i className="fab fa-whatsapp fa-xl mr-2" /> +2347014085472
+										<i className="fab fa-whatsapp fa-xl mr-2" /> +234 816 222
+										4407
 									</a>
 								</div>
 							</div>
